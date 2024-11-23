@@ -1,0 +1,6 @@
+[['green', 'yellow', 'yellow'], ['yellow', 'yellow', 'yellow'], ['yellow', 'red', 'red']]
+[['green', 'orange', 'orange'], ['blue', 'blue', 'blue'], ['red', 'white', 'white']]
+[['orange', 'white', 'white'], ['orange', 'orange', 'orange'], ['blue', 'blue', 'blue']]
+[['white', 'white', 'white'], ['white', 'white', 'green'], ['blue', 'red', 'orange']]
+[['red', 'green', 'green'], ['red', 'green', 'green'], ['red', 'orange', 'orange']]
+[['blue', 'blue', 'yellow'], ['red', 'red', 'yellow'], ['green', 'green', 'yellow']]
