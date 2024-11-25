@@ -11,7 +11,8 @@ from utils.utils import initialize_video_capture
 face_state = initialize_face_state()
 
 # Initialize video capture
-cap = initialize_video_capture()
+ip_camera_url = input("if using an ip webcamp enter its url, else press enter for using default webcam: ")
+cap = initialize_video_capture(ip_camera_url)
 if cap is None:
     exit()
 

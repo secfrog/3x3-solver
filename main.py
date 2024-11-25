@@ -10,15 +10,16 @@ from utils.utils import initialize_video_capture
 from solver.kociemba_algo import solve
 
 
+ip_camera_url = input("if using an ip webcamp enter its url, else press enter for using default webcam: ")
 def f(c):
     # Initialize the Rubik's Cube state
     face_state = initialize_face_state()
 
     # Initialize video capture
-    cap = initialize_video_capture()
+    
+    cap = initialize_video_capture(ip_camera_url)
     if cap is None:
         exit()
-
 
     ret, image = cap.read()
 
@@ -70,14 +71,14 @@ def f(c):
 
 
 color_list = ['yellow', 'blue', 'orange', 'white', 'green', 'red']
-guide_user = ["^\n|  - - >\n|", "< - -", "^\n|\n|", "| < - -\n|\nv", "< - - ", "Done"]
+guide_user = ["^\n|  - - >\n|", "< - -", "^\n|\n|", "| < - -\n|\nv", "< - - ", "Done"] # if you're using a phone camera don't follow this, but capture your pov (U R F D L B)
 for i in range(6):
     c = color_list[i]
 
     with open('assets/config/c.txt', 'w') as cr:
         cr.write(f'{c}')
         
-    time.sleep(3)
+    time.sleep(5)       # dajust delay between each capture
     f(c)
     print('face captured')
     if i!=5:
