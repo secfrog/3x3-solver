@@ -1,5 +1,5 @@
 # config.py
-
+import os
 '''choose the color ranges that you prefer'''
 ''''
 # Define refined color ranges in HSV space for Rubik's Cube colors
@@ -34,3 +34,7 @@ color_ranges = {
     "blue": ([90, 100, 100], [130, 255, 255])
 }
 """
+
+# Initialize requided files
+os.makedirs('assets/config/', exist_ok=True)
+os.makedirs('assets/images/', exist_ok=True)

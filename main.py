@@ -3,12 +3,11 @@
 import cv2
 import numpy as np
 import time
-from config.config import color_ranges                                                         # config.py
-from detection.color_detection import detect_color                                                # color_detection.py
-from solver.face_state import initialize_face_state, update_face_state, display_face_state     # Cube state.py
+from config.config import *                                                                         # config.py
+from detection.color_detection import detect_color                                                  # color_detection.py
+from solver.face_state import initialize_face_state, update_face_state, display_face_state          # Cube state.py
 from utils.utils import initialize_video_capture
 from solver.kociemba_algo import solve
-
 
 ip_camera_url = input("if using an ip webcamp enter its url, else press enter for using default webcam: ")
 def f(c):
