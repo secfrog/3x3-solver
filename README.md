@@ -61,6 +61,8 @@ Before running the solver, you need to test your camera to ensure that it correc
 
 The script will guide you through testing the detection of the cube's faces. Ensure that each face is detected correctly (matching the colors with the ones you set in the config.py).
 
+If you're using your built-in camera then just press enter when prompted, else enter your phone's ip url given by your 'ip webcam app'
+
 ## Cube Orientation
 The solver relies on specific color assignments for the cube faces. Ensure that the cube is oriented as follows:
 
