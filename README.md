@@ -89,8 +89,6 @@ Once your camera is properly configured, run the main.py script to start the pro
 After all six faces are captured, the program will use the Kociemba algorithm to solve the cube and display the solution steps.
 
 # Additional Information
-* The project uses OpenCV to detect the colors and orientations of the cube's faces.
-* The Kociemba algorithm is used to compute the solution to the scrambled cube.
 * If you encounter any issues with cube face detection, ensure your lighting conditions are good and the camera can clearly distinguish the cube's faces.
 
 # Contributing
